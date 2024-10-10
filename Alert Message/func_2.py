@@ -93,7 +93,7 @@ def message_T(df,driver):
             boton_enviar = driver.find_element(By.XPATH, '//span[@data-icon="send"]')
             boton_enviar.click()
 
-    
+
 def message_H(df,driver):
     campo_texto = driver.find_element(By.XPATH, '//div[@contenteditable="true"][@data-tab="10"]')
 
