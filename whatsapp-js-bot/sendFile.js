@@ -1,10 +1,8 @@
 const { MessageMedia } = require('whatsapp-web.js');
 const fs = require('fs');
 
-// Función para enviar un archivo
 const sendFile = (client, number, filePath, fileName) => {
     try {
-        // Asegúrate de que el archivo exista
         if (!fs.existsSync(filePath)) {
             throw new Error('File not found: ' + filePath);
         }
@@ -12,7 +10,6 @@ const sendFile = (client, number, filePath, fileName) => {
         // Crea el objeto de media desde el archivo
         const media = MessageMedia.fromFilePath(filePath);
 
-        // Envía el archivo con un caption (opcional)
         client.sendMessage(number, media, { caption: fileName })
             .then(response => {
                 console.log('File sent successfully:', response);
