@@ -1,3 +1,4 @@
+// sendFile.js
 const { MessageMedia } = require('whatsapp-web.js');
 const fs = require('fs');
 
