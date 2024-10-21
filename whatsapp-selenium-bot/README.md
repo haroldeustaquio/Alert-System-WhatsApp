@@ -1,4 +1,4 @@
-# WhatsApp SeleniumBot
+# WhatsApp-Selenium-Bot
 
 ## Overview
 This project automates the process of sending alerts and reports through WhatsApp. It integrates data extraction, cleaning, and the creation of notifications based on predefined conditions. Alerts include both messages and file attachments, ensuring timely updates directly to WhatsApp.
